@@ -3,7 +3,10 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'learning-glimmer',
-    environment
+    environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://reddit.com",
+    },
   };
 
   return ENV;

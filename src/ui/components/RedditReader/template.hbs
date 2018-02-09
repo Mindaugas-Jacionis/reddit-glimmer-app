@@ -1,0 +1,11 @@
+<div>
+  <h1>{{title}}</h1>
+  <ul>
+    {{#each posts key="@index" as |post|}}
+      <li>
+        {{post.data.title}}
+      </li>
+    {{/each}}
+  </ul>
+  <RedditList />
+</div>
